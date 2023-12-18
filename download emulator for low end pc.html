@@ -136,7 +136,7 @@ Hàu HM mượn form
                                 
                                 <h3 class="projects__title">Memuplay 6.0.6.0 không google</h3>
                                 <span class="projects__subtitle"></span>
-                                <a href="https://drive.google.com/file/d/1mFGPcfSrwRv4jrdC7-n7l2u-NUH0veU6/view?usp=drive_link"target="_blank" class="button"style="height: 50px; span class="projects__subtitle">ấn vào để tải</span> </a>
+                                <a href="https://web1s.io/q18ojc4ORf"target="_blank" class="button"style="height: 50px; span class="projects__subtitle">ấn vào để tải</span> </a>
                             </a>
                         </div>
                     </div>
@@ -570,26 +570,24 @@ body{
 </body>
 </html>
 <script>
-               function __nguyenhoanglong() {
-               nguyenhoanglongsound__();
+               function __HHM() {
+               HHMsound__();
               }
-              const nguyenhoanglong_List = [
-            "https://rr6---sn-8pxuuxa-i5o6d.googlevideo.com/videoplayback?expire=1702887091&ei=U6p_ZdDQNevSir4P3JCukAw&ip=89.149.14.39&id=o-AHOdHY04TGGlM3kLoB1o_uSE5NhIp5B5yES4p3ti4IZa&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&spc=UWF9f4yTDlqanNrn45VJGlNNoqzpYOk&vprv=1&svpuc=1&mime=audio%2Fmp4&gir=yes&clen=3420086&dur=215.295&lmt=1540554850864247&keepalive=yes&fexp=24007246&c=ANDROID&txp=5432432&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRAIgc74Jrz_fSIRG-2Hua84RKXwkvgXWSJ0uJJUaV_9RXS8CIHZLCOGs5bo1KatvdIoAQZ-i4OP0fHfKb5Qx4qR4rMY_&rm=sn-q4fesy76&req_id=4ff629dec352a3ee&ipbypass=yes&redirect_counter=2&cm2rm=sn-8pxuuxa-q5qr7k&cms_redirect=yes&cmsv=e&mh=-K&mip=2402:800:62e7:a320:cd4c:12a7:1e3:c5a&mm=29&mn=sn-8pxuuxa-i5o6d&ms=rdu&mt=1702865126&mv=m&mvi=6&pl=53&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AAO5W4owRQIgew5tTICh7puVWUedTIR0-h_hYv62VILcdGmNbRUrWJMCIQDeyhX1ytvOVlwFvDBkZ__hV3wnBbDUslUiHp-SXt2kiQ%3D%3D",
-            
-           
+              const HHM_List = [
+              "https://files.catbox.moe/gneog7.m4a",
            
 
          ];
          //Random music
-         let index = Math.floor(Math.random() * nguyenhoanglong_List.length);
-         const audio = new Audio(nguyenhoanglong_List[index]);
-         function nguyenhoanglongsound__() {
+         let index = Math.floor(Math.random() * HHM_List.length);
+         const audio = new Audio(HHM_List[index]);
+         function HHMsound__() {
            audio.play();
          }
-         document.addEventListener("click", nguyenhoanglongsound__);
+         document.addEventListener("click", HHMsound__);
          audio.addEventListener("ended", function() {
-           index = (index + 1) % nguyenhoanglong_List.length;
-           audio.src = nguyenhoanglong_List[index];
+           index = (index + 1) % HHM_List.length;
+           audio.src = HHM_List[index];
            audio.play();
          });
          

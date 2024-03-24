@@ -472,23 +472,36 @@ body{
 </body>
 </html>
 <script>
-    function __HHM() {
-               HHMsound__();
-              }
-              const HHM_List = [
-              "https://files.catbox.moe/tnn0zc.mp4",
-             "https://files.catbox.moe/7oimfe.mp4",
+   //<!-- Music -->
+    //<!-- Remix -->
+    function __nguyenhoanglong() {
+     nguyenhoanglongsound__();
+    }
+    const nguyenhoanglong_List = [
+  "https://cdn.discordapp.com/attachments/1139126996346097745/1139127409585684521/Hom_Nay_Em_Cuoi_Roi.mp3",
+  "https://cdn.discordapp.com/attachments/1139126996346097745/1139127707188338778/Co_Ai_Hen_Ho_Cung_Em_Chua.mp3",
+  "https://cdn.discordapp.com/attachments/1139126996346097745/1139128335620902995/Om_Em_Lan_Cuoi.mp3",
+  "https://cdn.discordapp.com/attachments/1139126996346097745/1139128404734644294/Pho_a_Len_en.mp3",
+  "https://cdn.discordapp.com/attachments/1139126996346097745/1139128971645177966/NNA.mp3",
+ "https://cdn.discordapp.com/attachments/1139126996346097745/1139132126244114433/Nhu_Anh_a_Thay_Em_Ness_x_Kaifo_Remix.mp3", 
+ "https://cdn.discordapp.com/attachments/1139126996346097745/1139133738559737916/Hen_Em_O_Lan_Yeu_Thu_2_-_Nguyenn_x_ang_Tuan_VuCukak_Remix-_Audio_Lyrics_Video.mp3",
+ "https://cdn.discordapp.com/attachments/1139126996346097745/1139134549188685885/1_2_3_EM_YEU_ANH_BT_REMIX_-_Nhac_HOT_Trend_Tik_Tok_2023_1_2_3_I_LOVE_YOU.mp3", 
+ "https://cdn.discordapp.com/attachments/1139126996346097745/1139134580767588442/Canh_ong_Yeu_Thuong_Nguyen_Hoang_Remix_Instrumental.mp3", 
 
-         ];
-         //Random music
-         let index = Math.floor(Math.random() * HHM_List.length);
-         const audio = new Audio(HHM_List[index]);
-         function HHMsound__() {
-           audio.play();
-         }
-         document.addEventListener("click", HHMsound__);
-         audio.addEventListener("ended", function() {
-           index = (index + 1) % HHM_List.length;
-           audio.src = HHM_List[index];
-           audio.play();
-         });
+ 
+
+];
+//Random music
+let index = Math.floor(Math.random() * nguyenhoanglong_List.length);
+const audio = new Audio(nguyenhoanglong_List[index]);
+function nguyenhoanglongsound__() {
+ audio.play();
+}
+document.addEventListener("click", nguyenhoanglongsound__);
+audio.addEventListener("ended", function() {
+ index = (index + 1) % nguyenhoanglong_List.length;
+ audio.src = nguyenhoanglong_List[index];
+ audio.play();
+});
+ 
+     </script>

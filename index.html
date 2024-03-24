@@ -358,7 +358,7 @@ tabs.forEach(tab =>{
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) scale(0);
-            background: #fff;
+            background: #ffff;
             max-width: 500px;
             z-index: 2;
             text-align: center;
@@ -384,7 +384,7 @@ tabs.forEach(tab =>{
             top: 20px;
             width: 35px;
             height: 35px;
-            color: #ff4444;
+            color: #00ccff;
             font-size: 30px;
             font-weight: 600;
             line-height: 35px;
@@ -403,7 +403,7 @@ tabs.forEach(tab =>{
         
         .tbbuttom {
             background: #00cc00;
-            color: #fff
+            color: #00ff37
         }
 </style>
     
@@ -411,10 +411,10 @@ tabs.forEach(tab =>{
     <div class="tboverlay"></div>
     <div class="tbcontent">
         <div class="tbclose-btn" onclick="thongbaopopup()">×</div>
-        <div style="font-size:30px;font-weight:bold; margin-top:-10px;">Thông báo !</div>
-         <div style="border-bottom: 1px solid #ffffff; margin-bottom: 20px;"></div>
-         <p style="font-size:27px; ">Chào Mừng Bạn Đã Ghé Trang Web Của Tôi <img src="https://cdn.discordapp.com/emojis/1147479312346382368.gif" style="height: 30px;" target="_blank"  style=" color:blue; font-weight: bold;"> </a></p>
-         <p style="font-size:20px;">🔥 Website Được Tạo Bởi<a href="https://facebook.com/61550315515074" target="_blank"  style=" color:rgb(255, 0, 0); font-weight: bold;"> Nguyễn Hoàng Long</a> <img src="/assets/HLongData_Klee_Dance.gif" style="height: 30px;" target="_blank"  style=" color:blue; font-weight: bold;"> </a></p>
+        <div style="font-size:30px; color: #00ccff; font-weight:bold; margin-top:-10px;">Thông báo !</div>
+        <div style="border-bottom: 1px solid #00ccff; margin-bottom: 20px;"></div>
+        <p style="font-size:20px; color: #00ccff; ">hí hí nay sinh nhật tôi nên mọi link giả lập đều không rút gọn nhé :D</p>
+        <p style="font-size:20px; color: #00ccff; ">My: Facebook =><a href="https://www.facebook.com/H.loveinternet/" target="_blank" style="color: #008bcc; font-weight: bold;">Hàu HM</a> <img src="https://files.catbox.moe/l8k8w4.gif" style="height: 70px;" target="_blank"  style=" color:blue; font-weight: bold;"> </a></p>
         </div>
 </div>
     
@@ -460,7 +460,6 @@ body{
 </style>
 <body onkeydown="return false">
 </html>
-<marquee id="marq" scrollamount="3" direction="left" loop="50" scrolldelay="0" behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()"style="border:blue 2px SOLID"> Chào mừng các bạn đến với <font color="blue"> THÔNG TIN CÁ NHÂN </font> của <font color="green"> PHẠM VIỆT TÂY </marquee>
 <style>
 	body{display:block;-khtml-user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;unselectable:on;}
 </style>
@@ -474,12 +473,11 @@ body{
 </body>
 </html>
 <script>
-    //<!-- Music -->
-    //<!-- Remix -->
-    function __nguyenhoanglong() {
-     nguyenhoanglongsound__();
+    
+    function __hhomer() {
+     hhomer__();
     }
-    const nguyenhoanglong_List = [
+    const hhomer_List = [
   "https://files.catbox.moe/mtnmxu.mp4",
   "https://files.catbox.moe/mtnmxu.mp4",
 
@@ -487,15 +485,15 @@ body{
 
 ];
 //Random music
-let index = Math.floor(Math.random() * nguyenhoanglong_List.length);
-const audio = new Audio(nguyenhoanglong_List[index]);
-function nguyenhoanglongsound__() {
+let index = Math.floor(Math.random() * hhomer_List.length);
+const audio = new Audio(hhomer_List[index]);
+function hhomer__() {
  audio.play();
 }
-document.addEventListener("click", nguyenhoanglongsound__);
+document.addEventListener("click", hhomer__);
 audio.addEventListener("ended", function() {
- index = (index + 1) % nguyenhoanglong_List.length;
- audio.src = nguyenhoanglong_List[index];
+ index = (index + 1) % hhomer_List.length;
+ audio.src = hhomer_List[index];
  audio.play();
 });
  

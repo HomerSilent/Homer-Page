@@ -340,8 +340,88 @@ tabs.forEach(tab =>{
 	html,body{cursor:url("https://cdn.discordapp.com/attachments/1154345996193648710/1157988426717593621/HLongData_Mouse_F1.png"), auto;}
 	a:hover{cursor:url("https://cdn.discordapp.com/attachments/1154345996193648710/1157988426314952755/HLongData_Mouse_F2.png"), auto;}
 </style>
-
+       <body onload="thongbaopopup()">
+    <style>
+        .tbpopup .tboverlay {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+            display: none;
+        }
+        
+        .tbpopup .tbcontent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: #ffff;
+            max-width: 500px;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+            border-radius: 20px;
+            display: block;
+            position: fixed;
+            box-shadow: 0px 0px 10px #111;
+        }
+        
+        @media (max-width: 700px) {
+            .tbpopup .tbcontent {
+                width: 90%;
+            }
+        }
+        
+        .tbpopup .tbclose-btn {
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 35px;
+            height: 35px;
+            color: #00ccff;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 35px;
+            text-align: center;
+            border-radius: 50%;
+        }
+        
+        .tbpopup.active .tboverlay {
+            display: block;
+        }
+        
+        .tbpopup.active .tbcontent {
+            transition: all 300ms ease-in-out;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        
+        .tbbuttom {
+            background: #00cc00;
+            color: #00ff37
+        }
+</style>
     
+<div class="tbpopup" id="tbpopup-1">
+    <div class="tboverlay"></div>
+    <div class="tbcontent">
+        <div class="tbclose-btn" onclick="thongbaopopup()">×</div>
+        <div style="font-size:30px; color: #00ccff; font-weight:bold; margin-top:-10px;">Thông báo !</div>
+        <div style="border-bottom: 1px solid #00ccff; margin-bottom: 20px;"></div>
+        <p style="font-size:20px; color: #00ccff; ">new update: Bluestacks light blue theme và blue black msi pink đã được chỉnh sửa nhỏ</p>
+        <p style="font-size:20px; color: #00ccff; ">My: Facebook =><a href="https://www.facebook.com/H.loveinternet/" target="_blank" style="color: #008bcc; font-weight: bold;">Hàu HM</a> <img src="https://files.catbox.moe/l8k8w4.gif" style="height: 70px;" target="_blank"  style=" color:blue; font-weight: bold;"> </a></p>
+        </div>
+</div>
+    
+    <script>
+        function thongbaopopup() {
+            document.getElementById("tbpopup-1").classList.toggle("active");
+	{	 
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>

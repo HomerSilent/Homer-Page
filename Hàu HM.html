@@ -438,7 +438,7 @@ Hàu HM mượn form
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) scale(0);
-           
+            background: url('your-image-url.jpg') center center no-repeat; /* Thay 'your-image-url.jpg' bằng URL của hình ảnh tùy chọn */
             background-size: cover;
             max-width: 500px;
             z-index: 2;
@@ -451,6 +451,11 @@ Hàu HM mượn form
             position: fixed;
             box-shadow: 0px 0px 10px #fff; /* Chữ trắng */
             color: #fff; /* Màu chữ trắng */
+        }
+
+        @media (max-width: 700px) {
+            .tbpopup .tbcontent {
+                width: 90%;
         }
 
         @media (max-width: 700px) {

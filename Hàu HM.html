@@ -433,7 +433,29 @@ Hàu HM mượn form
             z-index: 1;
             display: none;
         }
+.tbpopup .tbcontent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+           
+            background-size: cover;
+            max-width: 500px;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+            border-radius: 20px;
+            display: block;
+            position: fixed;
+            box-shadow: 0px 0px 10px #fff; /* Chữ trắng */
+            color: #fff; /* Màu chữ trắng */
+        }
 
+        @media (max-width: 700px) {
+            .tbpopup .tbcontent {
+                width: 90%;
      
         }
 

@@ -393,30 +393,5 @@ Hàu HM mượn form
    
 </body>
 
-</html>
 
-<script>
-    //<!-- Music -->
-    //<!-- ? -->
-    function __HHomer() {
-     HHomersound__();
-    }
-    const HHomer_List = [
-    "https://files.catbox.moe/yae72l.m4a",
-        "https://files.catbox.moe/yae72l.m4a",
-           
-];
-//Random music
-let index = Math.floor(Math.random() * HHomer_List.length);
-const audio = new Audio(HHomer_List[index]);
-function HHomersound__() {
- audio.play();
-}
-document.addEventListener("click", HHomersound__);
-audio.addEventListener("ended", function() {
- index = (index + 1) % HHomer_List.length;
- audio.src = HHomer_List[index];
- audio.play();
-});
- 
-     </script>
+

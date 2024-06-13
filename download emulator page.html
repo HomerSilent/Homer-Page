@@ -477,31 +477,3 @@ body{
 </style>
   
     
-</body>
-</html>
-<script>
-    
-    function __hhomer() {
-     hhomer__();
-    }
-    const hhomer_List = [
-  "https://files.catbox.moe/yae72l.m4a",
-  "https://files.catbox.moe/yae72l.m4a",
-
- 
-
-];
-//Random music
-let index = Math.floor(Math.random() * hhomer_List.length);
-const audio = new Audio(hhomer_List[index]);
-function hhomer__() {
- audio.play();
-}
-document.addEventListener("click", hhomer__);
-audio.addEventListener("ended", function() {
- index = (index + 1) % hhomer_List.length;
- audio.src = hhomer_List[index];
- audio.play();
-});
- 
-     </script>

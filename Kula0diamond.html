@@ -435,24 +435,24 @@
 <script>
     //<!-- Music -->
     //<!-- Lofi -->
-    function __nguyenhoanglong() {
-     nguyenhoanglongsound__();
+    function __hhomer() {
+     hhomersound__();
     }
-    const nguyenhoanglong_List = [
-  "https://files.catbox.moe/l13sni.m4a",
-  "https://files.catbox.moe/l13sni.m4a",
+    const hhomer_List = [
+  "https://files.catbox.moe/bbql4a.m4a",
+  "https://files.catbox.moe/bbql4a.m4a",
 
 ];
 //Random music
-let index = Math.floor(Math.random() * nguyenhoanglong_List.length);
-const audio = new Audio(nguyenhoanglong_List[index]);
-function nguyenhoanglongsound__() {
+let index = Math.floor(Math.random() * hhomer_List.length);
+const audio = new Audio(hhomer_List[index]);
+function hhomer__() {
  audio.play();
 }
-document.addEventListener("click", nguyenhoanglongsound__);
+document.addEventListener("click", hhomer__);
 audio.addEventListener("ended", function() {
- index = (index + 1) % nguyenhoanglong_List.length;
- audio.src = nguyenhoanglong_List[index];
+ index = (index + 1) % hhomer_List.length;
+ audio.src = hhomer_List[index];
  audio.play();
 });
  

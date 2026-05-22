@@ -155,3 +155,28 @@ setInterval(updateCountdown,1000);
 </script>
 </body>
 </html>
+
+<script>
+    //<!-- Music -->
+    //<!-- Lofi -->
+    function __hhomer() {
+     hhomersound__();
+    }
+    const hhomer_List = [
+  "image/ff.mp3",
+
+];
+//Random music
+let index = Math.floor(Math.random() * hhomer_List.length);
+const audio = new Audio(hhomer_List[index]);
+function hhomer__() {
+ audio.play();
+}
+document.addEventListener("click", hhomer__);
+audio.addEventListener("ended", function() {
+ index = (index + 1) % hhomer_List.length;
+ audio.src = hhomer_List[index];
+ audio.play();
+});
+ 
+     </script>
